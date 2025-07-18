@@ -1,0 +1,16 @@
+---
+- name: Copy chrony.conf configuration file
+  copy:
+    src: bigsky-chrony.conf
+    dest: /etc/chrony.conf
+    owner: root
+    group: root
+    mode: '0644'
+    backup: yes
+  notify: restart chronyd
+
+- name: Ensure chronyd service is enabled and started
+  systemd:
+    name: chronyd
+    state: started
+    enabled: yes
