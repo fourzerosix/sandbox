@@ -1,0 +1,6 @@
+---
+- name: Configure BigSky chrony NTP service
+  hosts: all
+  become: true
+  roles:
+    - bigsky-chrony
