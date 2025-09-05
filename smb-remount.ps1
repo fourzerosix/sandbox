@@ -1,4 +1,3 @@
-#!/bin/bash
 # Author: Dolphin Whisperer
 # Created: 2025-09-05
 # Description: This script unmounts - waits 10 seconds - then remounts all currently mounted SMB-shares
